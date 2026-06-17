@@ -13,7 +13,7 @@ st.caption("結合每日投資筆記、大數據與 Gemini AI 的滾動式分析
 # 設定 Gemini API
 try:
     genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-pro')
     ai_ready = True
 except Exception as e:
     ai_ready = False
